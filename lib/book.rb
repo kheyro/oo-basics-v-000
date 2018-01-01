@@ -1,5 +1,5 @@
 class Book
-  def initialize(name = "And Then There Were None")
+  def initialize(name = "And Then There Were None", author)
      @title = name
   end
 
@@ -7,12 +7,16 @@ class Book
     @title
   end
 
-  def author=(name)
-    @author = name
+  def author=(author)
+    @author = author
   end
 
+  def author
+    @author
+  end
+  
   def page_count=(page)
-    @page_count = page
+    @page_count =
   end
 
 end
